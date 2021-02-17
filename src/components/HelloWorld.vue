@@ -134,6 +134,8 @@ export default {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+    z-index: 1;
+    background-color: white;
   }
   .main div:nth-child(2) div {
     display: flex;
