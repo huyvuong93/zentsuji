@@ -152,5 +152,6 @@ export default {
     margin-top: 10%;
     color: white;
     box-shadow: 0 5px #C17D7D;
+    outline: none;
   }
 </style>
