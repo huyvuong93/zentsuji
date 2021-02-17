@@ -7,7 +7,9 @@
     <div>
       <h2>善通寺市に住んで</h2>
       <div>
-        <input type="number" min="1" max="80" v-model="history">
+        <select v-model="history">
+          <option v-for="n in 100" :key="n.id" :value="n">{{n}}</option>
+        </select>
         <p>年です。</p>
       </div>
     </div>
@@ -78,6 +80,7 @@ export default {
                     }
                 }).then(() => {
                     document.getElementById("sendBtn").disabled = true;
+                    alert("ありがとうございました！")
                 }).catch(err => console.log(err));
 
                 this.username = '';
@@ -119,8 +122,18 @@ export default {
   .main div:nth-child(1) input{
     width: 100%;
   }
-  .main div:nth-child(2) input{
+  .main div:nth-child(2) select{
     width: 40%;
+    border: 3px solid #FD9DA3;
+    border-radius: 10px;
+    padding: 18px 15%;
+    font-size: 18px;
+    outline: none;
+    height: 65px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
   }
   .main div:nth-child(2) div {
     display: flex;
