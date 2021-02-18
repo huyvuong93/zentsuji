@@ -17,8 +17,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  
 }
 body{
-  margin:0
+  margin:0;
+  background-color: #FDEEEF;
 }
 </style>
